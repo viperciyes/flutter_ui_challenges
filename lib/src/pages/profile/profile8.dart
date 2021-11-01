@@ -2,8 +2,6 @@
  * Author: Damodar Lohani
  * profile: https://github.com/lohanidamodar
   */
-
-import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_ui_challenges/core/presentation/res/assets.dart';
 
@@ -137,7 +135,8 @@ class ProfileHeader extends StatelessWidget {
         Ink(
           height: 200,
           decoration: BoxDecoration(
-            image: DecorationImage(image: coverImage as ImageProvider<Object>, fit: BoxFit.cover),
+            image: DecorationImage(
+                image: coverImage as ImageProvider<Object>, fit: BoxFit.cover),
           ),
         ),
         Ink(
@@ -171,13 +170,13 @@ class ProfileHeader extends StatelessWidget {
               ),
               Text(
                 title,
-                style: Theme.of(context).textTheme.title,
+                style: Theme.of(context).textTheme.headline6,
               ),
               if (subtitle != null) ...[
                 const SizedBox(height: 5.0),
                 Text(
                   subtitle!,
-                  style: Theme.of(context).textTheme.subtitle,
+                  style: Theme.of(context).textTheme.subtitle1,
                 ),
               ]
             ],

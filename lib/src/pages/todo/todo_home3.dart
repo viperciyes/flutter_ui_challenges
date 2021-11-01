@@ -1,12 +1,9 @@
-import 'package:cached_network_image/cached_network_image.dart';
 /**
  * Author: Damodar Lohani
  * profile: https://github.com/lohanidamodar
   */
-
 import 'package:flutter/material.dart';
 import 'package:flutter_ui_challenges/core/presentation/res/assets.dart';
-import 'package:flutter_ui_challenges/src/widgets/network_image.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class TodoHomeThreePage extends StatelessWidget {
@@ -65,7 +62,7 @@ class TodoHomeThreePage extends StatelessWidget {
         children: <Widget>[
           Text(
             "Wiki Lists",
-            style: Theme.of(context).textTheme.display1!.copyWith(
+            style: Theme.of(context).textTheme.headline4!.copyWith(
                   fontWeight: FontWeight.bold,
                   color: Colors.black,
                 ),

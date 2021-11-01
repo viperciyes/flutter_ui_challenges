@@ -2,8 +2,6 @@
  * Author: Damodar Lohani
  * profile: https://github.com/lohanidamodar
   */
-
-import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_swiper_null_safety/flutter_swiper_null_safety.dart';
 import 'package:flutter_ui_challenges/core/presentation/res/assets.dart';
@@ -26,7 +24,7 @@ class BikeHomePage extends StatelessWidget {
               padding: const EdgeInsets.only(left: 16.0, top: 16.0),
               child: Text(
                 "Categories",
-                style: Theme.of(context).textTheme.subhead,
+                style: Theme.of(context).textTheme.subtitle1,
               ),
             ),
             CategoryChooser(
@@ -98,7 +96,7 @@ class BikeHomePage extends StatelessWidget {
                 children: <Widget>[
                   Text(
                     "Recent Posts",
-                    style: Theme.of(context).textTheme.subhead,
+                    style: Theme.of(context).textTheme.subtitle1,
                   ),
                   Spacer(),
                   FlatButton(

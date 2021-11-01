@@ -1,10 +1,10 @@
+// ignore_for_file: slash_for_doc_comments
+
 /**
  * Author: Damodar Lohani
  * profile: https://github.com/lohanidamodar
   */
-
 import 'package:flutter/material.dart';
-import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter_ui_challenges/src/pages/animations/animation1/animation1.dart';
 import 'package:flutter_ui_challenges/src/utils/oval-right-clipper.dart';
 

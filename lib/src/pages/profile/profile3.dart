@@ -2,8 +2,6 @@
  * Author: Damodar Lohani
  * profile: https://github.com/lohanidamodar
   */
-
-import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_ui_challenges/core/presentation/res/assets.dart';
 import 'package:flutter_ui_challenges/src/widgets/network_image.dart';
@@ -48,7 +46,8 @@ class ProfileThreePage extends StatelessWidget {
                                 children: <Widget>[
                                   Text(
                                     "Little Butterfly",
-                                    style: Theme.of(context).textTheme.title,
+                                    style:
+                                        Theme.of(context).textTheme.headline6,
                                   ),
                                   ListTile(
                                     contentPadding: EdgeInsets.all(0),

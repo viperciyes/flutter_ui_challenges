@@ -2,7 +2,6 @@
  * Author: Damodar Lohani
  * profile: https://github.com/lohanidamodar
   */
-
 import 'package:flutter/material.dart';
 import 'package:flutter_ui_challenges/core/presentation/res/assets.dart';
 import 'package:flutter_ui_challenges/src/widgets/network_image.dart';
@@ -36,25 +35,29 @@ class DialogsPage extends StatelessWidget {
               color: Colors.lightGreen,
               colorBrightness: Brightness.light,
               child: Text("Success Dialog"),
-              onPressed: () => _customAlertDialog(context, AlertDialogType.SUCCESS ),
+              onPressed: () =>
+                  _customAlertDialog(context, AlertDialogType.SUCCESS),
             ),
             RaisedButton(
               color: Colors.lightGreen,
               colorBrightness: Brightness.light,
               child: Text("Info Dialog"),
-              onPressed: () => _customAlertDialog(context, AlertDialogType.INFO ),
+              onPressed: () =>
+                  _customAlertDialog(context, AlertDialogType.INFO),
             ),
             RaisedButton(
               color: Colors.lightGreen,
               colorBrightness: Brightness.light,
               child: Text("Warning Dialog"),
-              onPressed: () => _customAlertDialog(context, AlertDialogType.WARNING ),
+              onPressed: () =>
+                  _customAlertDialog(context, AlertDialogType.WARNING),
             ),
             RaisedButton(
               color: Colors.lightGreen,
               colorBrightness: Brightness.light,
               child: Text("Error Dialog"),
-              onPressed: () => _customAlertDialog(context, AlertDialogType.ERROR ),
+              onPressed: () =>
+                  _customAlertDialog(context, AlertDialogType.ERROR),
             ),
           ],
         ),
@@ -129,7 +132,7 @@ class BeautifulAlertDialog extends StatelessWidget {
                   children: <Widget>[
                     Text(
                       "Alert!",
-                      style: Theme.of(context).textTheme.title,
+                      style: Theme.of(context).textTheme.headline6,
                     ),
                     SizedBox(height: 10.0),
                     Flexible(

@@ -2,7 +2,6 @@
  * Author: Siddhartha Joshi
  * profile: https://github.com/cimplesid
   */
-
 import 'package:flutter/material.dart';
 
 class BottomSheetAwesome extends StatefulWidget {
@@ -35,7 +34,7 @@ class _BottomSheetAwesomeState extends State<BottomSheetAwesome> {
                   borderRadius: BorderRadius.circular(10),
                 ),
                 child: Text(
-                  progress.length == null ? "0/100" : "${progress.length}/100 ",
+                  "${progress.length}/100 ",
                   style: TextStyle(color: Colors.white),
                 ),
               ),
@@ -66,7 +65,9 @@ class _BottomSheetAwesomeState extends State<BottomSheetAwesome> {
                   ),
                 ),
                 RaisedButton(
-                  color: progress.containsKey(progress[index]) ? Theme.of(context).primaryColor : Colors.grey.shade800,
+                  color: progress.containsKey(progress[index])
+                      ? Theme.of(context).primaryColor
+                      : Colors.grey.shade800,
                   onPressed: () {
                     if (progress.containsKey(progress[index]))
                       setState(() {
@@ -77,8 +78,10 @@ class _BottomSheetAwesomeState extends State<BottomSheetAwesome> {
                         progress[index] = index;
                       });
                   },
-                  child: Text(progress.containsKey(progress[index]) ?
-                    'Unselect Page ${currentIndex +1}' : 'Select Page ${currentIndex +1}' ,
+                  child: Text(
+                    progress.containsKey(progress[index])
+                        ? 'Unselect Page ${currentIndex + 1}'
+                        : 'Select Page ${currentIndex + 1}',
                     style: TextStyle(color: Colors.white),
                   ),
                 ),

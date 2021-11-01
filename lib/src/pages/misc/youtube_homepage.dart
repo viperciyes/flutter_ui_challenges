@@ -1,3 +1,5 @@
+// ignore_for_file: slash_for_doc_comments
+
 /**
  * Author: Ambika Dulal
  * profile: https://github.com/Ambikadulal

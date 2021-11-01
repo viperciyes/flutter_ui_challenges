@@ -1,8 +1,9 @@
+// ignore_for_file: slash_for_doc_comments
+
 /**
  * Author: Damodar Lohani
  * profile: https://github.com/lohanidamodar
   */
-
 import 'package:flutter/material.dart';
 import 'package:flutter_ui_challenges/core/presentation/res/assets.dart';
 
@@ -30,14 +31,13 @@ class MenuOnePage extends StatelessWidget {
             left: 100.0,
             child: Transform.rotate(
               angle: -0.5,
-                          child: Container(
+              child: Container(
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(20.0),
                   color: Colors.white.withOpacity(0.3),
                 ),
                 width: 150,
                 height: 300,
-                
               ),
             ),
           ),
@@ -46,14 +46,13 @@ class MenuOnePage extends StatelessWidget {
             right: 90.0,
             child: Transform.rotate(
               angle: -0.8,
-                          child: Container(
+              child: Container(
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(20.0),
                   color: Colors.white.withOpacity(0.3),
                 ),
                 width: 150,
                 height: 300,
-                
               ),
             ),
           ),
@@ -62,14 +61,13 @@ class MenuOnePage extends StatelessWidget {
             left: 30.0,
             child: Transform.rotate(
               angle: -0.5,
-                          child: Container(
+              child: Container(
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(20.0),
                   color: Colors.white.withOpacity(0.3),
                 ),
                 width: 150,
                 height: 200,
-                
               ),
             ),
           ),
@@ -78,14 +76,13 @@ class MenuOnePage extends StatelessWidget {
             right: 0.0,
             child: Transform.rotate(
               angle: -0.8,
-                          child: Container(
+              child: Container(
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(20.0),
                   color: Colors.white.withOpacity(0.3),
                 ),
                 width: 150,
                 height: 200,
-                
               ),
             ),
           ),
@@ -99,24 +96,22 @@ class MenuOnePage extends StatelessWidget {
                   height: 100,
                   width: 100,
                   decoration: BoxDecoration(
-                    color: Colors.white,
-                    borderRadius: BorderRadius.circular(10.0)
-                  ),
+                      color: Colors.white,
+                      borderRadius: BorderRadius.circular(10.0)),
                   child: Container(
                     clipBehavior: Clip.antiAlias,
                     decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(20.0),
-                      image: DecorationImage(
-                        image: NetworkImage(avatars[0]),
-                        fit: BoxFit.cover,
-                      )
-                    ),
+                        borderRadius: BorderRadius.circular(20.0),
+                        image: DecorationImage(
+                          image: NetworkImage(avatars[0]),
+                          fit: BoxFit.cover,
+                        )),
                   ),
                 ),
               ),
               const SizedBox(height: 10.0),
               InkWell(
-                onTap: (){},
+                onTap: () {},
                 splashColor: primary,
                 child: Padding(
                   padding: const EdgeInsets.all(16.0),
@@ -128,7 +123,7 @@ class MenuOnePage extends StatelessWidget {
                 ),
               ),
               InkWell(
-                onTap: (){},
+                onTap: () {},
                 splashColor: primary,
                 child: Padding(
                   padding: const EdgeInsets.all(16.0),
@@ -140,7 +135,7 @@ class MenuOnePage extends StatelessWidget {
                 ),
               ),
               InkWell(
-                onTap: (){},
+                onTap: () {},
                 splashColor: primary,
                 child: Padding(
                   padding: const EdgeInsets.all(16.0),
@@ -166,7 +161,7 @@ class MenuOnePage extends StatelessWidget {
                 ),
               ),
               InkWell(
-                onTap: (){},
+                onTap: () {},
                 splashColor: primary,
                 child: Padding(
                   padding: const EdgeInsets.all(16.0),
@@ -178,7 +173,7 @@ class MenuOnePage extends StatelessWidget {
                 ),
               ),
               InkWell(
-                onTap: (){},
+                onTap: () {},
                 splashColor: primary,
                 child: Padding(
                   padding: const EdgeInsets.all(16.0),

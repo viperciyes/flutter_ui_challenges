@@ -2,7 +2,6 @@
  * Author: Damodar Lohani
  * profile: https://github.com/lohanidamodar
   */
-
 import 'package:flutter/material.dart';
 import 'package:flutter_swiper_null_safety/flutter_swiper_null_safety.dart';
 import 'package:flutter_ui_challenges/core/presentation/res/assets.dart';
@@ -78,9 +77,9 @@ class FoodDeliveryHomePage extends StatelessWidget {
   SliverAppBar _buildAppBar(BuildContext context) {
     return SliverAppBar(
       textTheme: TextTheme(
-          title: Theme.of(context)
+          headline6: Theme.of(context)
               .textTheme
-              .title!
+              .headline6!
               .merge(TextStyle(color: Colors.black))),
       iconTheme: IconThemeData(color: Colors.lightGreen),
       automaticallyImplyLeading: false,
@@ -126,7 +125,7 @@ class FoodDeliveryHomePage extends StatelessWidget {
         padding: EdgeInsets.only(left: 20.0, top: 20.0),
         child: Text(
           title,
-          style: Theme.of(context).textTheme.subtitle,
+          style: Theme.of(context).textTheme.subtitle1,
         ),
       ),
     );
@@ -153,7 +152,7 @@ class FoodDeliveryHomePage extends StatelessWidget {
               Text(restaurants[index]["name"],
                   style: Theme.of(context)
                       .textTheme
-                      .title!
+                      .headline6!
                       .merge(TextStyle(fontSize: 14.0))),
               SizedBox(
                 height: 5.0,
@@ -161,7 +160,7 @@ class FoodDeliveryHomePage extends StatelessWidget {
               Text(restaurants[index]["specials"],
                   style: Theme.of(context)
                       .textTheme
-                      .subhead!
+                      .subtitle1!
                       .merge(TextStyle(fontSize: 12.0)))
             ],
           ),
@@ -194,7 +193,7 @@ class FoodDeliveryHomePage extends StatelessWidget {
                         Text("Nepali breakfast",
                             style: Theme.of(context)
                                 .textTheme
-                                .title!
+                                .headline6!
                                 .merge(TextStyle(fontSize: 14.0))),
                         SizedBox(
                           height: 5.0,
@@ -202,7 +201,7 @@ class FoodDeliveryHomePage extends StatelessWidget {
                         Text("Vegetarian, Nepali",
                             style: Theme.of(context)
                                 .textTheme
-                                .subhead!
+                                .subtitle1!
                                 .merge(TextStyle(fontSize: 12.0))),
                         SizedBox(
                           height: 5.0,
@@ -213,7 +212,7 @@ class FoodDeliveryHomePage extends StatelessWidget {
                   Text("Rs. 180",
                       style: Theme.of(context)
                           .textTheme
-                          .title!
+                          .headline6!
                           .merge(TextStyle(fontSize: 16.0, color: Colors.red))),
                   IconButton(
                     icon: Icon(Icons.favorite_border),

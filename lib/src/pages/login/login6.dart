@@ -2,7 +2,6 @@
  * Author: Damodar Lohani
  * profile: https://github.com/lohanidamodar
   */
-
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
@@ -23,9 +22,8 @@ class LoginSixPage extends StatelessWidget {
                   top: 15.0,
                   child: Container(
                     decoration: BoxDecoration(
-                      color: Colors.yellow,
-                      borderRadius: BorderRadius.circular(20.0)
-                    ),
+                        color: Colors.yellow,
+                        borderRadius: BorderRadius.circular(20.0)),
                     width: 70.0,
                     height: 20.0,
                   ),
@@ -46,7 +44,8 @@ class LoginSixPage extends StatelessWidget {
                   const EdgeInsets.symmetric(horizontal: 32, vertical: 8.0),
               child: TextField(
                 decoration: InputDecoration(
-                    labelText: "Email", hasFloatingPlaceholder: true),
+                    labelText: "Email",
+                    floatingLabelBehavior: FloatingLabelBehavior.auto),
               ),
             ),
             Padding(
@@ -55,7 +54,8 @@ class LoginSixPage extends StatelessWidget {
               child: TextField(
                 obscureText: true,
                 decoration: InputDecoration(
-                    labelText: "Password", hasFloatingPlaceholder: true),
+                    labelText: "Password",
+                    floatingLabelBehavior: FloatingLabelBehavior.auto),
               ),
             ),
             Container(

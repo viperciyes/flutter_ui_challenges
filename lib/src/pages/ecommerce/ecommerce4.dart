@@ -1,9 +1,7 @@
-import 'package:cached_network_image/cached_network_image.dart';
 /**
  * Author: Damodar Lohani
  * profile: https://github.com/lohanidamodar
   */
-
 import 'package:flutter/material.dart';
 import 'package:flutter_ui_challenges/core/presentation/res/assets.dart';
 
@@ -25,7 +23,7 @@ class EcommerceFourPage extends StatelessWidget {
             padding: const EdgeInsets.only(top: 15, left: 10, right: 10),
             child: Text(
               "Categories",
-              style: Theme.of(context).textTheme.title,
+              style: Theme.of(context).textTheme.headline6,
             ),
           ),
           Container(
@@ -44,7 +42,7 @@ class EcommerceFourPage extends StatelessWidget {
             padding: const EdgeInsets.only(top: 15, left: 10, right: 10),
             child: Text(
               "Featured Products",
-              style: Theme.of(context).textTheme.title,
+              style: Theme.of(context).textTheme.headline6,
             ),
           ),
           SizedBox(height: 10),
@@ -70,7 +68,7 @@ class EcommerceFourPage extends StatelessWidget {
                 children: <Widget>[
                   Text(
                     "Recent products",
-                    style: Theme.of(context).textTheme.title,
+                    style: Theme.of(context).textTheme.headline6,
                   ),
                   Spacer(),
                   InkWell(

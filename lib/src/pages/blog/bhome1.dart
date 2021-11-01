@@ -2,7 +2,6 @@
  * Author: Damodar Lohani
  * profile: https://github.com/lohanidamodar
   */
-
 import 'package:flutter/material.dart';
 import 'package:flutter_ui_challenges/src/pages/animations/animation1/animation1.dart';
 import 'package:flutter_ui_challenges/src/widgets/network_image.dart';
@@ -68,7 +67,7 @@ class BlogHomeOnePage extends StatelessWidget {
           appBarTheme: AppBarTheme(
             color: Colors.white,
             textTheme: TextTheme(
-              title: TextStyle(
+              headline6: TextStyle(
                 color: secondaryColor,
                 fontSize: 20.0,
                 fontWeight: FontWeight.bold,
@@ -146,7 +145,6 @@ class BlogHomeOnePage extends StatelessWidget {
               ),
             ],
           ),
-
           bottomNavigationBar: BottomNavigationBar(
             currentIndex: 1,
             type: BottomNavigationBarType.fixed,

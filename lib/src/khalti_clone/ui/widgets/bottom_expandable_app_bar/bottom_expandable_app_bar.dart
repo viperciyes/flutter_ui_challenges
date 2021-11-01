@@ -2,9 +2,10 @@
  * Author: Damodar Lohani
  * profile: https://github.com/lohanidamodar
   */
-import './controller.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
+
+import './controller.dart';
 
 enum Side { Top, Bottom }
 
@@ -68,7 +69,7 @@ class _BottomExpandableAppBarState extends State<BottomExpandableAppBar> {
   void didChangeDependencies() {
     super.didChangeDependencies();
     _updateBarController();
-    panelState = _controller?.state?.value ?? panelState;
+    panelState = _controller?.state.value ?? panelState;
   }
 
   @override
@@ -108,8 +109,7 @@ class _BottomExpandableAppBarState extends State<BottomExpandableAppBar> {
     }
     _controller = newController;
     if (_controller != null) {
-      _controller!.state
-          .addListener(_handleBottomBarControllerAnimationTick);
+      _controller!.state.addListener(_handleBottomBarControllerAnimationTick);
     }
   }
 
@@ -123,14 +123,13 @@ class _BottomExpandableAppBarState extends State<BottomExpandableAppBar> {
       color: Colors.transparent,
       elevation: 0,
       child: Stack(
-        //TODO: Find out how to get top app bar overlap body content of scaffold 
+        //TODO: Find out how to get top app bar overlap body content of scaffold
         alignment: widget.attachSide == Side.Bottom
             ? Alignment.bottomCenter
             : Alignment.topCenter,
         children: <Widget>[
           Padding(
-            padding:
-                EdgeInsets.symmetric(horizontal: widget.horizontalMargin ?? 0),
+            padding: EdgeInsets.symmetric(horizontal: widget.horizontalMargin),
             child: Stack(
               children: [
                 Container(
@@ -151,8 +150,8 @@ class _BottomExpandableAppBarState extends State<BottomExpandableAppBar> {
             ),
           ),
           Container(
-            color: widget.bottomAppBarColor ??
-                Theme.of(context).bottomAppBarColor,
+            color:
+                widget.bottomAppBarColor ?? Theme.of(context).bottomAppBarColor,
             height: widget.appBarHeight,
             child: widget.bottomAppBarBody,
           ),

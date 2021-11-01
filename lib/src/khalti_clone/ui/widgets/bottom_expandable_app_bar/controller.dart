@@ -17,11 +17,9 @@ class BottomBarController extends ChangeNotifier {
         dragLength = dragLength;
 
   @Deprecated("use state instead. Will be removed soon")
-  Animation<double> get animation =>
-      _animationController?.view ?? kAlwaysCompleteAnimation;
+  Animation<double> get animation => _animationController.view;
 
-  Animation<double> get state =>
-      _animationController?.view ?? kAlwaysCompleteAnimation;
+  Animation<double> get state => _animationController.view;
 
   final AnimationController _animationController;
 
@@ -94,8 +92,8 @@ class DefaultBottomBarController extends StatefulWidget {
   }) : super(key: key);
 
   static BottomBarController? of(BuildContext context) {
-    final _BottomBarControllerScope? scope =
-        context.dependOnInheritedWidgetOfExactType(aspect: _BottomBarControllerScope);
+    final _BottomBarControllerScope? scope = context
+        .dependOnInheritedWidgetOfExactType(aspect: _BottomBarControllerScope);
     return scope?.controller;
   }
 
